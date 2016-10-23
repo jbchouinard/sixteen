@@ -38,7 +38,8 @@ Memory mapped keyboard and display
 | 15  | JN   | Negate jump condition? |
 
 ### Registers
-
+| **Name**  | **Details**         |
+|-----------|---------------------|
 | A         | accumulator         |
 | D         | data                |
 | X         | index               |
