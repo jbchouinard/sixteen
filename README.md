@@ -1,4 +1,12 @@
-## Tentative Specs
+A virtual 16 bit computer, including a simulated CPU, memory, keyboard and screen.
+
+## Installation
+
+Install Logisim, following instructions at http://www.cburch.com/logisim/. 
+
+The entire computer is contained in sixteen.circ.
+
+## Specifications
 
 ### Overview
 
@@ -38,7 +46,8 @@ Memory mapped keyboard and display
 | 15  | JN   | Negate jump condition? |
 
 ### Registers
-
+| **Name**  | **Details**         |
+|-----------|---------------------|
 | A         | accumulator         |
 | D         | data                |
 | X         | index               |
