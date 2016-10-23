@@ -1,4 +1,12 @@
-## Tentative Specs
+A virtual 16 bit computer, including a simulated CPU, memory, keyboard and screen.
+
+## Installation
+
+Install Logisim, following instructions at http://www.cburch.com/logisim/. 
+
+The entire computer is contained in circuit.circ.
+
+## Specifications
 
 ### Overview
 
