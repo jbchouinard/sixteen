@@ -17,8 +17,8 @@ Compared to the Hack CPU, this one has:
  
 ## Changelog
 
-2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
-2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
+* 2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
+* 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
 
 ## Todo
 
