@@ -1,19 +1,19 @@
-# Sixteen - a simulated 16 bit computer
+# A simulated 16-bit computer
 
 This is an educational project, with the goal of learning how computers work at a low level
 by implementing a complete, functional 16 bit computer in Logisim, and an assembler for its machine language.
 
-The design of the ALU is taken from http://www.nand2tetris.org/.
+The ALU interface is largely inspired by http://www.nand2tetris.org/ - though the implementation is my own.
 
-The CPU builds on the Hack architecture from nand2tetris but is a bit more sophisticated and has a 
-mostly different machine language.
-
+The CPU builds on the Hack architecture from nand2tetris, but is a bit more sophisticated.
 Compared to the Hack CPU, this one has:
  * hardware stack operations
  * combined program and data memory
  * separate accumulator and address registers, allowing:
  * 32 bit op codes combining instruction and address
- * carry bit register (for arithmetic and conditional jumps)
+ * carry bit latch (for arithmetic and conditional jumps)
+ 
+ Their machine codes are entirely different.
  
 ## Changelog
 
@@ -29,6 +29,13 @@ Compared to the Hack CPU, this one has:
 * Memory chip with memory-mapped screen and keyboard
 * Assembler
 
+*Maybe?*
+* Load program constants directly from INS1
+* Variable # of cycles per instruction (skip INS1/FD fetchs for opcodes that don't need them)
+* OR: switch to a more RISC-y architecture, go back to 16 bit instructions only
+* Hardware bit shift op
+* Keyboard interrupts
+
 ## Installation
 
 Install Logisim, following instructions at http://www.cburch.com/logisim/. 
@@ -39,23 +46,19 @@ The entire computer is contained in sixteen.circ.
 
 ### Overview
 
-32k16RAM (64kiB)
+16 bit ALU
 
-16 bit ALU with 6-bit control code
+32KiB memory
 
-1 index register
+Memory-mapped keyboard and display
 
-1 accumulator register
+3 usable registers
 
-1 data register
-
-Memory mapped keyboard and display
-
-16 to 32 bit op codes (16 bit instruction, optional 16 bit address)
+16 - 32 bit op codes (16 bit instruction, optional 16 bit address)
 
 ### Registers
 
-*List of registers*
+*List of registers (all 16-bit)*
 
 | Name   | Details             |
 |--------|---------------------|
@@ -66,14 +69,15 @@ Memory mapped keyboard and display
 | SP     | stack pointer       |
 | INS0   | instruction         |
 | INS1   | instruction address |
-| CAR    | carry               |
 
 ### ALU
 
 16-bit, uses 6 bit control code. Uses same control codes as ALU from the nand2tetris course -
 the truth table for its most useful functions is reproduced below.
 
-*ALU Truth Table (Non-exhaustive)*
+Unlike the n2t ALU, this one has carry in and carry out bits.
+
+*ALU Truth Table*
 
 | zx  | nx   | zy  | ny   | f     | no       | out     |
 |-----|------|-----|------|-------|----------|---------|
