@@ -9,7 +9,7 @@ The CPU builds on the Hack architecture from nand2tetris but is a bit more sophi
 mostly different machine language.
 
 Compared to the Hack CPU, this one has:
- * hardware implemented stack operations
+ * hardware stack operations
  * combined program and data memory
  * separate accumulator and address registers, allowing:
  * 32 bit op codes combining instruction and address
@@ -17,7 +17,17 @@ Compared to the Hack CPU, this one has:
  
 ## Changelog
 
+2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
+
+## Todo
+
+* Write location logic
+* Jump logic
+* Keyboard control chip
+* Screen control chip
+* Memory chip with memory-mapped screen and keyboard
+* Assembler
 
 ## Installation
 
