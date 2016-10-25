@@ -164,9 +164,9 @@ the last instruction.
 |------|-------------------|
 | 000  | No jump           |
 | 001  | Jump if zero      |
-| 010  | Jump if positive  |
+| 010  | Jump if negative  |
 | 011  | Jump if carry     |
 | 100  | Jump              |
 | 101  | Jump if not zero  |
-| 110  | Jump if negative  |
+| 110  | Jump if positive  |
 | 111  | Jump if not carry |
