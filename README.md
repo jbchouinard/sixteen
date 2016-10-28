@@ -17,6 +17,7 @@ Compared to the Hack CPU, this one has:
  
 ## Changelog
 
+2016-10-25: Jump logic done, most of write location logic done.
 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
 
 ## Installation
