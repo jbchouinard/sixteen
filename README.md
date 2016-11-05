@@ -1,42 +1,37 @@
 # A simulated 16-bit computer
 
+=======
+##Table of Contents
+
+* [Overview](#overview)
+* [Installation](#installation)
+* [Hardware Specification](#hardware-specification)
+    * [Overview](#overview)
+    * [Registers](#registers)
+    * [ALU](#alu)
+    * [CPU](#cpu)
+        * [Codes](#codes)
+        * [Read/Write Location](#readwrite-location)
+        * [ALU Control](#alu-control)
+        * [Jump Conditions](#jump-conditions)
+* [Changelog](#changelog)
+* [Todo](#todo)
+
+## Overview
+
 This is an educational project, with the goal of learning how computers work at a low level
 by implementing a complete, functional 16 bit computer in Logisim, and an assembler for its machine language.
 
 The ALU interface is largely inspired by http://www.nand2tetris.org/ - though the implementation is my own.
 
 The CPU builds on the Hack architecture from nand2tetris, but is a bit more sophisticated.
-Compared to the Hack CPU, this one has:
  * hardware stack operations
  * combined program and data memory
- * separate accumulator and address registers, allowing:
+ * separate accumulator and address registers
  * 32 bit op codes combining instruction and address
  * carry bit latch (for arithmetic and conditional jumps)
- 
- Their machine codes are entirely different.
- 
-## Changelog
 
-* 2016-10-25: Jump logic done, most of write location logic done.
-* 2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
-* 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
-
-## Todo
-
-* Write location logic
-* Jump logic
-* Keyboard control chip
-* Screen control chip
-* Memory chip with memory-mapped screen and keyboard
-* Assembler
-
-*Maybe?*
-* Load program constants directly from INS1
-* Variable # of cycles per instruction (skip INS1/FD fetchs for opcodes that don't need them)
-* OR: switch to a more RISC-y architecture, go back to 16 bit instructions only
-* Hardware bit shift op
-* Keyboard interrupts
->>>>>>> 010deeb7a95578d1553ddffa3bf3a18905a834e0
+Their machine codes are entirely different.
 
 ## Installation
 
@@ -172,3 +167,27 @@ the last instruction.
 | 101  | Jump if not zero  |
 | 110  | Jump if positive  |
 | 111  | Jump if not carry |
+=======
+
+## Changelog
+
+* 2016-10-25: Jump logic done, most of write location logic done.
+* 2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
+* 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
+
+## Todo
+
+* Finish and test write location logic
+* Finish and test jump logic
+* Keyboard control chip
+* Screen control chip
+* Memory chip with memory-mapped screen and keyboard
+* Assembler
+
+*Maybe?*
+
+* Load program constants directly from INS1
+* Variable # of cycles per instruction (skip INS1/FD fetchs for opcodes that don't need them)
+* OR: switch to a more RISC-y architecture, go back to 16 bit instructions only
+* Hardware bit shift op
+* Keyboard interrupts
