@@ -1,6 +1,5 @@
 # A simulated 16-bit computer
 
-=======
 ##Table of Contents
 
 * [Overview](#overview)
@@ -167,22 +166,23 @@ the last instruction.
 | 101  | Jump if not zero  |
 | 110  | Jump if positive  |
 | 111  | Jump if not carry |
-=======
 
 ## Changelog
 
+* 2016-11-06: Wrote parser for assembler
 * 2016-10-25: Jump logic done, most of write location logic done.
 * 2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
 * 2016-10-23: The ALU is done, most of the basic CPU layout is done, but the CPU control logic is missing.
 
 ## Todo
 
+* Finish writing assembler
+* Build CPU Chip Tester
 * Finish and test write location logic
 * Finish and test jump logic
 * Keyboard control chip
 * Screen control chip
 * Memory chip with memory-mapped screen and keyboard
-* Assembler
 
 *Maybe?*
 
