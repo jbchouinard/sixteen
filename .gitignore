@@ -1,2 +1,5 @@
 *.ods
 *.ods#
+*.pyc
+*.bin
+*.ram
