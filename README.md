@@ -169,6 +169,7 @@ the last instruction.
 
 ## Changelog
 
+* 2016-11-07: Finished writing assembler. Functions for simple programs, need to test more thoroughly.
 * 2016-11-06: Wrote parser for assembler
 * 2016-10-25: Jump logic done, most of write location logic done.
 * 2016-10-24: The CPU control logic for read location and ALU is done. Memory chip w/out devices is done.
@@ -176,8 +177,8 @@ the last instruction.
 
 ## Todo
 
-* Finish writing assembler
-* Build CPU Chip Tester
+* Write assembly specification
+* Build CPU chip tester
 * Finish and test write location logic
 * Finish and test jump logic
 * Keyboard control chip

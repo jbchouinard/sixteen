@@ -1,9 +1,17 @@
-begin:
-	one A
-	inc A
-	inc A
-	add A,A @D  // D = 2*A
-	add D,D @A  // A = 2*D = 4*A
-	store A @result  // result = A
-	load result @D   // D = result
-end:
+noop
+noop
+noop
+noop
+one A
+add A,A @A  // A = 2
+add A,A @A  // A = 4
+add A,A @A  // etc.
+add A,A @A
+add A,A @&1024
+add A,A @A
+add A,A @A
+add A,A @A
+add A,A @A
+add A,A @A
+copy A @D  // D = 1024
+halt
