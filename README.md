@@ -178,6 +178,9 @@ the last instruction.
 ## Todo
 
 * Write assembly specification
+* Add constant literals to assembler
+* Add macro processor to assembler
+* Add macros: push, pop, call
 * Build CPU chip tester
 * Finish and test write location logic
 * Finish and test jump logic
