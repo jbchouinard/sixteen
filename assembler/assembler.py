@@ -12,8 +12,8 @@ import codes
 
 tokens = [
     'SEP', 'AT', 'COMMA',               # Delimiters
-    'DREG', 'IREG',                     # Direct Addressing
-    'ADDR', 'LABEL', 'IDENT', 'CONST',  # Indirect addressing
+    'DREG', 'IREG',                     # Direct/Indirect Addressing
+    'ADDR', 'LABEL', 'IDENT', 'CONST',  # Immediate Addressing
     'OP00', 'OP10', 'OP11', 'OP21',     # Operations
 ]
 
