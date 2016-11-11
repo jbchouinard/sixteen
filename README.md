@@ -112,8 +112,8 @@ Unlike the n2t ALU, this one has carry in and carry out bits.
 | 11              | W1   |    *                   |
 | 10              | W2   |    *                   |
 | 9               | ZX   | ALU control            |
-| 8               | ZY   |    *                   |
-| 7               | NX   |    *                   |
+| 8               | NX   |    *                   |
+| 7               | ZY   |    *                   |
 | 6               | NY   |    *                   |
 | 5               | F    |    *                   |
 | 4               | NO   |    *                   |
