@@ -1,6 +1,6 @@
 # A simulated 16-bit computer
 
-##Table of Contents
+## Table of Contents
 
 * [Overview](#overview)
 * [Installation](#installation)
