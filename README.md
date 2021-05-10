@@ -1,12 +1,9 @@
-# A simulated 16-bit computer
+# sixteen
 
-## CPU
+A simulated 16-bit CPU, implemented in [Logisim](http://www.cburch.com/logisim/).
 
-![CPU circuit diagram](screenshots/CPU.png?raw=true "CPU")
-
-## ALU
-
-![ALU circuit diagram](screenshots/ALU.png?raw=true "CPU")
+The repo also includes an assembler to produce programs in Logisim memory file format from
+a minimal assembly language (not yet documented).
 
 ## Table of Contents
 
@@ -23,6 +20,15 @@
         * [Jump Conditions](#jump-conditions)
 * [Changelog](#changelog)
 * [Todo](#todo)
+
+## CPU
+
+![CPU circuit diagram](screenshots/CPU.png?raw=true "CPU")
+
+## ALU
+
+![ALU circuit diagram](screenshots/ALU.png?raw=true "CPU")
+
 
 ## Overview
 
