@@ -1,5 +1,13 @@
 # A simulated 16-bit computer
 
+## CPU
+
+![CPU circuit diagram](screenshots/CPU.png?raw=true "CPU")
+
+## ALU
+
+![ALU circuit diagram](screenshots/ALU.png?raw=true "CPU")
+
 ## Table of Contents
 
 * [Overview](#overview)
